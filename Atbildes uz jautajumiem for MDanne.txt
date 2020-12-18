@@ -1,0 +1,131 @@
+Nodaļa 1:
+
+1.1 O(log2n) = O(log2 128) = 8 operacijas
+
+1.2 O(log2n) = O(log2 256) = 9 operacijas
+
+1.3 O(log2n)
+
+1.4 O(n)
+
+1.5 O(n*2)
+
+1.6 
+
+Nodaļa 2:
+
+2.1 Linked list
+
+2.2 Linked list
+
+2.3 Array
+
+2.4	Jauna elementa piemetinājuma gadījumā ne masīva beigās programmai nāksies pārstumdīt katru nākamo elementu
+	masīva uz priekšu, kas pieprasīs daudz operāciju un spēcīgi palielinās O.
+
+2.5     Pie iestarpinājuma ātrāk, tā kā iestarpinājums notiek saistītā sarakstā.
+	Pie meklējuma lenak, tā kā saraksta atrašanai pa sākumburtu tiks izmantots binārs meklējums,
+	bet lietotāja meklējumam ietvaros saraksta pa sākumburtu tiks izmantots vienkāršs meklējums.
+
+Nodaļa 3:
+
+3.1 Uz so momentu izpildas funkcija Greet2, kura bija izsaukta no funkcijas Greet.
+
+3.2 Steks bus aug bezgaligi, kamēr programma steidzami nebūs pabeidzama.
+
+Nodaļa 4:
+
+4.1-4.4 - kods
+
+4.5 O(n)
+
+4.6 O(2n)
+
+4.7 O(n-(n-2))
+
+4.8 O(n*(n-1))
+
+Nodaļa 5:
+
+5.1, 5.4 - Secīgi
+
+5.2, 5.3 - Nav secīgi
+
+5.5 - 4
+
+5.6 - 2
+
+5.7 - 4
+
+Nodaļa 6:
+
+Pseudocode:
+
+If (cab.cat) == bat return cab.cat;
+else if (cab.car) == bat return cab.car;
+else if (cab.cat.mat) == bat return cab.cat.mat;
+else if (cab.cat.bat) == bat return cab.cat.bat;
+else if (cab.car.cat) == bat return cab.car.cat;
+esle if (cab.car.bar) == bat return cab.car.bar;
+else if (cab.cat.mat.bat) == bat return cab.cat.mat.bat;
+...
+
+Result: cab.cat.bat
+
+6.3
+ 
+A False
+
+B True
+
+C True
+
+6.4
+
+1. Pamosties
+2. Izdarīt uzlādi
+3. Pieņemt dušu
+4. Ģērbties
+5. Notīrīt zobus
+6. Pabrokastot
+7. Iesaiņot pusdienas
+
+6.5 А and C
+
+Nodaļa 7:
+
+7.1
+
+A 8 
+B 60
+C 4
+
+Nodaļa 8:
+
+8.1 Nē, tāpēc ka ja mēs liksim tikai vislielākie mantas, tad drīz vien vieta zem noslēgsies, bet малые lietas jau arī neuzlīdīs
+
+8.2 Nē, tā kā neņemot vērā laiku uz apciemojums nesanāks sanemt maksimālo punktu skaits
+
+8.3 Nē
+
+8.4 Jā
+
+8.5 Nē
+
+8.6 Jā, tāpēc ka viņas var interpretet kā uzdevumu par komivojažieri
+
+8.7 Jā, tā kā nepieciešams aprēķināt visas iespējamas kombinācijas un nedrīkst sadauzīt uz 'subtasks'
+
+8.8 Nē, tā kā uzdevumu var sadauzīt uz 'subtasks'
+
+Nodaļa 9:
+
+9.1 Jā, tā kā ja aizbāzt viņu mugursomā svaram 3 un 4, kopā ar pārējiem priekšmetiem, tad
+maksimāli iespējama cena palielināties līdz 4500 abas gadījumos.
+
+9.2 25 punktu, Udens, ediens, videokamera.
+
+9.3 Result = 3("lue")
+
+Pieliku foto ar 9.2 un 9.3 risinajumu
+
