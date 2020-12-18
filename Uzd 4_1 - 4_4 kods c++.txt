@@ -1,0 +1,83 @@
+#include <iostream>
+
+//4.1
+
+int sum(int arr[5], int i) {
+
+	if (!i) return arr[i];
+	else {
+
+		return arr[i] + sum(arr, i - 1);
+
+	}
+}
+
+// 4.2
+
+int elemCount(int arr[5], int i) {
+
+	if (!i) return 1;
+	else {
+
+		i = i - 1;
+		return 1 + elemCount(arr, i);
+
+	}
+
+}
+
+// 4.3
+
+int maxElem(int arr[5], int i, int max) {
+
+	if (!i && max) return max;
+	else if (!i) return arr[i];
+	else {
+		if (max < arr[i]) max = arr[i];
+		return maxElem(arr, i - 1, max);
+
+	}
+}
+
+// 4.4
+
+int binarySearch(int arr[10], int low, int hight, int value ) {
+
+	int i = hight - ((hight - low) / 2);
+	if (arr[i] == value) return i;
+	else {
+
+		if (arr[i] > value) {
+			hight = i - 1;
+			return binarySearch(arr, low, hight, value);
+		}
+		else
+		{
+			low = i + 1;
+			return binarySearch(arr, low, hight, value);
+		}
+	}
+
+}
+
+int main() {
+
+	int arr[5] = { 5, 6, 1, 7, 2 };
+	int sortArr[10] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+
+	int i = 4;
+	int low, hight, value;
+	int max;
+
+	std::cout << sum(arr, i) << std::endl;
+
+	std::cout << elemCount(arr, i) << std::endl;
+
+	std::cout << maxElem(arr, i, max = 0) << std::endl;
+
+	std::cout << binarySearch(sortArr, low = 0, hight = 10, value = 5) << std::endl;
+
+	system("pause");
+
+	return 0;
+}

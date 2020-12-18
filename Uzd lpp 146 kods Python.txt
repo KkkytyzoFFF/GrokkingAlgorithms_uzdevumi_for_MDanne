@@ -1,0 +1,39 @@
+def person_is_seller(name):
+    if "_MangoSeller" in name:
+        return True
+    else: 
+        return False
+    
+
+def search(name):
+
+    from collections import deque
+    mango_queue = deque()
+    mango_queue.append(name)
+    searched = []
+
+    while mango_queue:
+        person = mango_queue.popleft()
+        
+        if not person in searched:
+        
+            if person_is_seller(person):
+                print(person + " is a mango seller!")
+                return True
+            else:
+                for human in graph[person]:
+                    mango_queue.append(human)
+                searched.append(person)
+    return False
+ 
+graph = {}
+graph["me"] = ["Rem", "Raymond", "Dasha"]
+graph["Rem"] = ["Arsen", "Alina"]
+graph["Raymond"] = ["Adolpf_MangoSeller"]
+graph["Dasha"] = ["Masha"]
+graph["Arsen"] = []
+graph["Alina"] = ["Raymond"]
+graph["Adolpf_MangoSeller"] = [] 
+
+
+search("me")
